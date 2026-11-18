@@ -1,0 +1,18 @@
+# Secrets — never commit API keys
+.env
+
+# Scraped knowledge base
+data/*
+!data/.gitkeep
+
+# Python
+.venv/
+__pycache__/
+*.pyc
+.pytest_cache/
+
+# OS / editor
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/

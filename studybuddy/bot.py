@@ -14,7 +14,10 @@ def answer(question: str) -> str:
 def main() -> None:
     print("StudyBuddy ready. Type 'quit' to exit.")
     while True:
-        q = input("> ").strip()
+        try:
+            q = input("> ").strip().lstrip("﻿")
+        except (EOFError, KeyboardInterrupt):
+            break
         if q.lower() in {"quit", "exit"}:
             break
         if q:
